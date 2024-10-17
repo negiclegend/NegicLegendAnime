@@ -37,7 +37,7 @@ export default (() => {
         } else if (!display.innerText) {
             displayQuote(activeIndex)
         }
-        showFooterButtons(animeList.filter((anm, i) => anm.quote !== undefined && activeValue(i)).length > 2)
+        showFooterButtons(animeList.filter((anm, i) => anm.quote !== undefined && activeValue(i)).length > 1)
         $('#footer').style.display = display.innerText ? 'flex' : 'none'
     }
 
