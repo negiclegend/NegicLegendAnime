@@ -1,0 +1,181 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+@media screen and (min-aspect-ratio: 10/16) and (max-aspect-ratio: 1) {
+    html {
+        font-size: 1.2vw;
+    }
+
+    #header {
+        height: 6rem;
+        margin: 2rem 0;
+    }
+
+    #header.fly {
+        top: 1rem;
+    }
+
+    .header-item {
+        height: 6rem;
+        border-radius: 3rem;
+    }
+
+    .header-icon {
+        font-size: 3rem;
+    }
+
+    #volume,
+    #theme {
+        width: 30vw;
+    }
+
+    #menu {
+        width: 20vw;
+    }
+
+    #tag-menu {
+        padding: 0 5vw;
+    }
+
+    .tag-menu-half {
+        padding: 0;
+        width: 100%;
+    }
+
+    #tag-menu-all,
+    .tag-menu-item,
+    #exit-menu {
+        font-size: 4rem;
+        border-radius: 3.5rem;
+        height: 7rem;
+        line-height: 7rem;
+    }
+
+    #tag-menu-all,
+    .tag-menu-item {
+        margin: 1.5rem 0;
+        letter-spacing: 0.5vw;
+    }
+
+    #exit-menu {
+        margin: 1rem auto;
+        width: 100%;
+    }
+
+    #name {
+        font-size: 5rem;
+        letter-spacing: 0.3vw;
+    }
+
+    #avt {
+        width: 24vw;
+        margin: 2.5rem auto;
+        border: 0.2rem solid white;
+    }
+
+    #description {
+        font-size: 3rem;
+    }
+
+    #negic-icon {
+        font-size: 6rem;
+        padding: 2rem;
+    }
+
+    .eye {
+        width: 5vw;
+        margin: 0 0.8vw;
+    }
+
+    #scroll, #quantity {
+        bottom: 7rem;
+    }
+
+    #scroll {
+        right: 2.5rem;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    #scroll i {
+        font-size: 3rem;
+    }
+
+    #quantity {
+        width: 14rem;
+        height: 14rem;
+        left: 2rem;
+        padding: 0 0.5vw;
+    }
+
+    #anime-number {
+        font-size: 3rem;
+    }
+
+    .rank {
+        width: 9rem;
+        height: 9rem;
+        font-size: 4rem;
+    }
+
+    #quantity.active .rank {
+        -webkit-transform: rotate(calc(150deg / 3 * var(--i))) translateY(-18rem);
+            -ms-transform: rotate(calc(150deg / 3 * var(--i))) translateY(-18rem);
+                transform: rotate(calc(150deg / 3 * var(--i))) translateY(-18rem);
+    }
+
+    #main {
+        margin-bottom: 2rem;
+    }
+
+    .anime-wrapper {
+        border-radius: 1.5vh;
+        border: 0.1rem solid white;
+        width: 85vw;
+        margin: 2rem auto;
+    }
+
+    .anime-img-wrap {
+        border-bottom: 0.05vw solid white;
+    }
+
+    .anime-level {
+        padding: 0.6rem 1.5rem;
+        font-size: 3rem;
+        border-bottom-right-radius: 2vw;
+        letter-spacing: 0.2vw;
+    }
+
+    .anime-link {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .anime-tag-wrap {
+        padding: 1vh 2vw;
+    }
+
+    .anime-tag {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #quote-display {
+        padding: 1rem 0;
+    }
+
+    #quote {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+
+    #prev-quote i,
+    #next-quote i {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+}

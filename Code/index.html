@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negic's anime list</title>
+    <link rel="icon" href="../Storage/IMG/logo.png" type="image/x-icon" />
+
+
+    <!-- Imports -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Carter+One&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- Imports -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" id="theme-file" href="./CSS/theme/dark.css">
+    <!-- CSS -->
+
+    <!-- Responsive -->
+    <link rel="stylesheet" href="./CSS/responsive/big_horizontal.css">
+    <link rel="stylesheet" href="./CSS/responsive/small_horizontal.css">
+    <link rel="stylesheet" href="./CSS/responsive/big_vertical.css">
+    <link rel="stylesheet" href="./CSS/responsive/small_vertical.css">
+    <!-- Responsive -->
+
+    <!-- JS -->
+    <script type="module" src="./JS/bind.js" defer></script>
+    <script type="module" src="./JS/render.js" defer></script>
+    <script type="module" src="./JS/quote.js" defer></script>
+    <script type="module" src="./JS/filter.js" defer></script>
+    <script type="module" src="./JS/audio.js" defer></script>
+    <script type="module" src="./JS/handleEvents.js" defer></script>
+    <script type="module" src="./JS/scroll.js" defer></script>
+    <!-- JS -->
+</head>
+<body>
+    <div id="wrapper" class="dark">
+        <header id="header">
+            <div id="volume" class="header-item mute">
+                <i id="volume-off" class="header-icon fa-solid fa-volume-xmark"></i>
+                <i id="volume-on" class="header-icon fa-solid fa-volume-high"></i>
+            </div>
+            <div id="menu" class="header-item">
+                <i class="header-icon fa-solid fa-bars"></i>
+            </div>
+            <div id="theme" class="header-item dark">
+                <i id="light" class="header-icon fa-solid fa-sun"></i>
+                <i id="dark" class="header-icon fa-solid fa-moon"></i>
+            </div>
+        </header>
+
+        <div id="tag-menu-wrap">
+            <div id="tag-menu">
+                <div id="exit-menu">
+                    <i class="far fa-times-circle"></i>
+                </div>
+                <div class="tag-menu-half">
+                    <div id="tag-menu-all">All</div>
+                    <div class="tag-menu-item yes">Slice of Life</div>
+                    <div class="tag-menu-item yes">Romance</div>
+                    <div class="tag-menu-item yes">Comedy</div>
+                    <div class="tag-menu-item yes">Action</div>
+                    <div class="tag-menu-item yes">School</div>
+                    <div class="tag-menu-item yes">Harem</div>
+                    <div class="tag-menu-item yes">Psychological</div>
+                    <div class="tag-menu-item yes">Fantasy</div>
+                    <div class="tag-menu-item yes">Drama</div>
+                    <div class="tag-menu-item yes">Supernatural</div>
+                    <div class="tag-menu-item yes">Martial Art</div>
+                    <div class="tag-menu-item yes">Science Fiction</div>
+                </div>
+                <div class="tag-menu-half">
+                    <div class="tag-menu-item yes">Adventure</div>
+                    <div class="tag-menu-item yes">Mecha</div>
+                    <div class="tag-menu-item yes">Music</div>
+                    <div class="tag-menu-item yes">Detective</div>
+                    <div class="tag-menu-item yes">Military</div>
+                    <div class="tag-menu-item yes">Game</div>
+                    <div class="tag-menu-item yes">Otome</div>
+                    <div class="tag-menu-item yes">Food</div>
+                    <div class="tag-menu-item yes">Isekai</div>
+                    <div class="tag-menu-item yes">Ecchi</div>
+                    <div class="tag-menu-item yes">Horror</div>
+                    <div class="tag-menu-item yes">Historical</div>
+                    <div class="tag-menu-item yes">Sport</div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="body">
+            <div id="negic">
+                <div id="self">
+                    <p id="name" data-text="Negic_Legend">Negic_Legend</p>
+
+                    <div id="avt">
+                        <div id="face">
+                            <div id="eyes">
+                                <div class="eye"></div>
+                                <div class="eye"></div>
+                            </div>
+                        </div>
+
+                        <img src="../Storage/IMG/avt.jpg" alt="avatar" id="avt-img">
+                    </div>
+
+                    <p id="description">
+                        <span style="--i:1;">T</span>
+                        <span style="--i:2;">h</span>
+                        <span style="--i:3;">i</span>
+                        <span style="--i:4;">s</span>
+                        <span style="--i:5;"> </span>
+                        <span style="--i:6;">i</span>
+                        <span style="--i:7;">s</span>
+                        <span style="--i:8;"> </span>
+                        <span style="--i:9;">m</span>
+                        <span style="--i:10;">y</span>
+                        <span style="--i:11;"> </span>
+                        <span style="--i:12;">f</span>
+                        <span style="--i:12;">a</span>
+                        <span style="--i:13;">v</span>
+                        <span style="--i:14;">o</span>
+                        <span style="--i:15;">r</span>
+                        <span style="--i:16;">i</span>
+                        <span style="--i:17;">t</span>
+                        <span style="--i:18;">e</span>
+                        <span style="--i:19;"> </span>
+                        <span style="--i:20;">a</span>
+                        <span style="--i:21;">n</span>
+                        <span style="--i:22;">i</span>
+                        <span style="--i:23;">m</span>
+                        <span style="--i:24;">e</span>
+                        <span style="--i:25;"> </span>
+                        <span style="--i:26;">l</span>
+                        <span style="--i:27;">i</span>
+                        <span style="--i:28;">s</span>
+                        <span style="--i:29;">t</span>
+                    </p>
+                </div>
+
+                <i id="negic-icon" class="fas fa-caret-up"></i>
+            </div>
+
+            <div id="scroll">
+                <i class="fa-solid fa-down-long"></i>
+            </div>
+            <div id="quantity">
+                <div class="rank active" style="--i:0"><span>S</span></div>
+                <div class="rank active" style="--i:1"><span>A</span></div>
+                <div class="rank active" style="--i:2"><span>B</span></div>
+                <p id="anime-number"><span id="number"></span> anime</p>
+            </div>
+            <div id="main"></div>
+        </div>
+    
+        <footer id="footer">
+            <div id="prev-quote">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div id="quote-display"><p id="quote"></p></div>
+            <div id="next-quote">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </footer>
+    </div>
+    <audio id="audio" src=""></audio>
+</body>
+</html>

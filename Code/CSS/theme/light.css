@@ -1,0 +1,90 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 10 version
+*/
+
+#wrapper {
+    background-color: #74b9ff;
+}
+
+#tag-menu {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#negic {
+    color: black;
+}
+
+.anime-wrapper:hover {
+    -webkit-box-shadow: 0 0 0 0.5rem white;
+            box-shadow: 0 0 0 0.5rem white;
+}
+
+#face {
+    background-color: #fbff03;
+}
+
+#name {
+    color: #f1f2f6;
+}
+
+#name::before {
+    color: #222f3e;
+    border-right: 2px solid #222f3e;
+    -webkit-animation: grow 6s linear forwards, fadeOut 6s linear forwards;
+            animation: grow 6s linear forwards, fadeOut 6s linear forwards;
+}
+
+@media screen and (orientation:landscape) {
+    #name {
+        -webkit-text-stroke: 0.02vw #222f3e;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    #name {
+        -webkit-text-stroke: 0.03vw #222f3e;
+    }
+}
+
+@-webkit-keyframes grow {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes grow {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        border-right: 2px solid #222f3e;
+    }
+
+    100% {
+        border-right: 0px solid #222f3e;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        border-right: 2px solid #222f3e;
+    }
+
+    100% {
+        border-right: 0px solid #222f3e;
+    }
+}
