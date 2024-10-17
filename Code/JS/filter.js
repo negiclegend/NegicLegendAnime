@@ -41,7 +41,7 @@ export default (() => {
    })
 
    all.addEventListener('click', () => {
-      const isActive = all.classList.contains('active')
+      const isActive = !TagsList.every(tag => tag.tagValue)
       TagsList.forEach((tag, i) => {
          tag.tagValue = isActive
          Btns[i].classList.toggle('yes', isActive)
