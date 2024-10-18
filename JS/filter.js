@@ -1,7 +1,7 @@
 "use strict"
 import { $, $$ } from './bind.js'
-import { TagsList, rankList } from '../../Storage/List/ActiveList.js'
-import animeList from '../../Storage/List/AnimeList.js'
+import { TagsList, rankList } from '../Storage/List/ActiveList.js'
+import animeList from '../Storage/List/AnimeList.js'
 import filterQuotes from './quote.js'
 
 export default (() => {

@@ -1,6 +1,6 @@
 "use strict"
 import { $ } from './bind.js'
-import animeList from '../../Storage/List/AnimeList.js'
+import animeList from '../Storage/List/AnimeList.js'
 
 (() => {
     const display = $('#quote')
@@ -20,7 +20,7 @@ import animeList from '../../Storage/List/AnimeList.js'
             <div class="anime-wrapper active">
                 <div class="anime-level ${checkLevel(anm.level)}">${anm.level}</div>
                 <div class="anime-img-wrap ${anm.imgP}">
-                    <img src="../Storage/IMG/${i + 1}.jpg" class="anime-img" ${error()}>
+                    <img src="./Storage/IMG/${i + 1}.jpg" class="anime-img" ${error()}>
                     <a href="${anm.link}" class="anime-link">${anm.name}</a>
                 </div>
                 <div class="anime-tag-wrap">

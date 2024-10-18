@@ -1,7 +1,7 @@
 "use strict"
 
 import { $, $$ } from './bind.js'
-import animeList from '../../Storage/List/AnimeList.js'
+import animeList from '../Storage/List/AnimeList.js'
 import activeValue from './filter.js'
 
 export default (() => {
