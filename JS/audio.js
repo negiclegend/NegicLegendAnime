@@ -14,13 +14,13 @@ export default(() => {
             isPlaying = true
             if (currentIndex !== i) {
                 currentIndex = i
-                audio.src = `../Storage/Music/${i + 1}.mp3`
+                audio.src = `./Storage/Music/${i + 1}.mp3`
             }
             audio.play()
         })
     })
 
-    for (let anm of anms) anm.addEventListener('mouseleave', () => playing.canPlay && audio.pause())
+    for (let anm of anms) anm.addEventListener('mouseleave', () => playing.canPlay && (isPlaying = false, audio.pause()))
 
     audio.addEventListener('ended', () => isPlaying && setTimeout(() => audio.play(), 1000))
 
