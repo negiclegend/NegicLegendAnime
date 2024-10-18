@@ -63,6 +63,6 @@ import playing from './audio.js'
     handleClick({
         clickedElement: $('#volume'),
         addedClass: 'mute',
-        callBack: () => playing.canPlay = !$('#volume').classList.contains('mute')
+        callBack: () => playing.canPlay ^= true
     })
 })()
