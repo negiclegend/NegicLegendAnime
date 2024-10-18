@@ -14,10 +14,10 @@ import { $ } from './bind.js'
         if(isScrollingDown) {
             menu.style.opacity = 0
             setTimeout(() => menu.style.display = 'none', 300)   
-        }
-        else {
+        } else {
             menu.style.display = 'flex'
             setTimeout(() => menu.style.opacity = 1)
+            if (window.scrollY < header.offsetHeight) menu.style.display = 'flex'
         }
         lastScrollTop = Math.max(0, currentScrollTop)
     })
