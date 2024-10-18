@@ -11,13 +11,13 @@ import { $ } from './bind.js'
         header.classList.toggle('fly', window.scrollY > header.offsetHeight)
         const currentScrollTop = document.documentElement.scrollTop
         const isScrollingDown = currentScrollTop > lastScrollTop && window.scrollY > header.offsetHeight
+        let setTime
         if(isScrollingDown) {
             menu.style.opacity = 0
-            setTimeout(() => menu.style.display = 'none', 300)   
+            setTime = setTimeout(() => (window.scrollY > header.offsetHeight) && (menu.style.display = 'none'), 300)   
         } else {
             menu.style.display = 'flex'
             setTimeout(() => menu.style.opacity = 1)
-            if (window.scrollY < header.offsetHeight) menu.style.display = 'flex'
         }
         lastScrollTop = Math.max(0, currentScrollTop)
     })
