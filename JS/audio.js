@@ -17,10 +17,9 @@ export default(() => {
                 audio.src = `./Storage/Music/${i + 1}.mp3`
             }
             audio.play()
+            anm.addEventListener('mouseleave', () => playing.canPlay && (isPlaying = false, audio.pause()))
         })
     })
-
-    for (let anm of anms) anm.addEventListener('mouseleave', () => playing.canPlay && (isPlaying = false, audio.pause()))
 
     audio.addEventListener('ended', () => (isPlaying && playing.canPlay) && setTimeout(() => audio.play(), 1000))
 
