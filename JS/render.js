@@ -1,6 +1,6 @@
 "use strict"
 import { $ } from './bind.js'
-import animeList from '../Storage/List/ActiveList.js'
+import animeList from '../Storage/List/AnimeList.js'
 
 (() => {
     const display = $('#quote')
