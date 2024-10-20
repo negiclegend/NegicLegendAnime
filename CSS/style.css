@@ -492,6 +492,12 @@ body {
     transition: 0.2s;
 }
 
+#scroll.up i {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
 /* Scroll *//* Scroll */
 
 /* Quantity *//* Quantity */
@@ -851,10 +857,16 @@ body {
         border-bottom-right-radius: 0;
     }
 
+    #scroll.up:hover i {
+        -webkit-transform: rotate(180deg) translateY(0.8vw);
+            -ms-transform: rotate(180deg) translateY(0.8vw);
+                transform: rotate(180deg) translateY(0.8vw);
+    }
+
     #scroll:hover i {
-        -webkit-transform: translateY(-0.8vw);
-            -ms-transform: translateY(-0.8vw);
-                transform: translateY(-0.8vw);
+        -webkit-transform: translateY(0.8vw);
+            -ms-transform: translateY(0.8vw);
+                transform: translateY(0.8vw);
     }
 
     .rank:hover span {
