@@ -796,14 +796,14 @@ body {
 /* Footer *//* Footer *//* Footer *//* Footer */
 
 /* No hover *//* No hover */
-@media(hover: none) {
+@media(pointer: coarse) {
     .anime-level {
         top: 0 !important;
     }
 }
 
 /* Hover *//* Hover */
-@media(hover: hover) {
+@media(pointer: fine) {
     #prev-quote i:hover {
         -webkit-transform: translateX(-0.5vw);
             -ms-transform: translateX(-0.5vw);
