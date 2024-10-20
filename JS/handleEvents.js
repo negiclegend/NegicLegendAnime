@@ -22,7 +22,7 @@ import playing from './audio.js'
         type: 'remove'
     })
 
-    window.matchMedia('(hover: hover)').matches && handleClick({
+    window.matchMedia('(hover: hover) and (pointer: fine)').matches && handleClick({
         clickedElement: $('#avt'),
         callBack: () => {
             if($('#avt.active')) {
