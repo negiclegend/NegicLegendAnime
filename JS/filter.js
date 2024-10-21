@@ -16,10 +16,15 @@ export default (() => {
    }
 
    function filterAnime() {
-      anms.forEach((anm, i) => anm.classList.toggle('active', activeValue(i)))
-      $('#number').innerText = animeList.filter((a, i) => activeValue(i)).length
+      let activeCount = 0
+      anms.forEach((anm, i) => {
+         const isActive = activeValue(i)
+         anm.classList.toggle('active', isActive)
+         if (isActive) activeCount++
+      })
+      $('#number').innerText = activeCount
       filterQuotes()
-   }
+   }   
 
    Btns.forEach((btn, i) => {
       btn.addEventListener('click', () => {
