@@ -2487,7 +2487,7 @@ const animeList = [
         tags: ['Action', 'Supernatural', 'Adventure', 'Science Fiction'],
     },
     {
-        level: 'S-',
+        level: 'S+',
         imgP: 'center',
         link: 'https://myanimelist.net/anime/31580/Ajin',
         name: 'Ajin',
