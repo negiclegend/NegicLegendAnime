@@ -15,7 +15,7 @@ import animeList from '../Storage/List/AnimeList.js'
        return 'onerror="this.src=\'https://thumbs.dreamstime.com/b/computer-screen-error-effect-glitch-binary-code-abstract-digital-matrix-background-noise-vector-228803972.jpg\'; this.parentNode.style.alignItems=\'center\'"'
     }
 
-    const html = animeList.map((anm, i) => {
+    $('#main').innerHTML = animeList.map((anm, i) => {
         return `
             <div class="anime-wrapper active">
                 <div class="anime-level ${checkLevel(anm.level)}">${anm.level}</div>
@@ -28,10 +28,8 @@ import animeList from '../Storage/List/AnimeList.js'
                 </div>
             </div>
         `
-    })
-    
-    $('#number').innerHTML = html.length
-    $('#main').innerHTML = html.join('\n')
-    display.innerHTML = `${animeList[0].quote.content} - ${animeList[0].quote.author || `[${animeList[0].name}]`}`
+    }).join('\n')
+    $('#number').innerText = animeList.length
+    display.innerHTML = `${animeList[0].quote.content} - ${animeList[0].quote.author}`
     display.dataset.index = 0
 })()

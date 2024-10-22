@@ -3,6 +3,17 @@ import { $, $$ } from './bind.js'
 import playing from './audio.js'
 
 (() => {
+    const menuBtn = $('#menu')
+    const menu = $('#tag-menu-wrap')
+    const avt = $('#avt')
+    const body = $('body')
+    const selfBtn = $('#negic-icon')
+    const self = $('#self')
+    const themeBtn = $('#theme')
+    const theme = $('#theme-file')
+    const audioBtn = $('#volume')
+    const exit = $('#exit-menu')
+
     function handleClick(clickE) {
         clickE.clickedElement.addEventListener('click', () => {
             (clickE.affectedElement||clickE.clickedElement).classList[clickE.type||'toggle'](clickE.addedClass||'active')
@@ -11,22 +22,22 @@ import playing from './audio.js'
     }
 
     handleClick({
-        clickedElement: $('#menu'),
-        affectedElement: $('#tag-menu-wrap'),
+        clickedElement: menuBtn,
+        affectedElement: menu,
         type: 'add',
     })
 
     handleClick({
-        clickedElement: $('#exit-menu'),
-        affectedElement: $('#tag-menu-wrap'),
+        clickedElement: exit,
+        affectedElement: menu,
         type: 'remove'
     })
 
     window.matchMedia('(hover: hover) and (pointer: fine)').matches && handleClick({
-        clickedElement: $('#avt'),
+        clickedElement: avt,
         callBack: () => {
-            if($('#avt.active')) {
-                $('body').addEventListener('mousemove', () => {
+            if(avt.classList.contains('active')) {
+                body.addEventListener('mousemove', () => {
                     for(let eye of $$('.eye')) {
                         let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2)
                         let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2)
@@ -40,16 +51,15 @@ import playing from './audio.js'
     })
 
     handleClick({
-        clickedElement: $('#negic-icon'),
-        affectedElement: $('#self'),
+        clickedElement: selfBtn,
+        affectedElement: self,
         addedClass: 'hide'
     })
 
     handleClick({
-        clickedElement: $('#theme'),
+        clickedElement: themeBtn,
         addedClass: 'dark',
         callBack: () => {
-            const theme = $('#theme-file')
             theme.href = theme.href.indexOf('dark') > -1 ? './CSS/theme/light.css' : './CSS/theme/dark.css'
             for(let anim of document.getAnimations()) {
                 if(anim.animationName == 'grow' || anim.animationName == 'fadeOut') {
@@ -61,7 +71,7 @@ import playing from './audio.js'
     })
 
     handleClick({
-        clickedElement: $('#volume'),
+        clickedElement: audioBtn,
         addedClass: 'mute',
         callBack: () => playing.canPlay ^= true
     })

@@ -5,10 +5,11 @@ import animeList from '../Storage/List/AnimeList.js'
 import filterQuotes from './quote.js'
 
 export default (() => {
-   const Btns = $$('.tag-menu-item')
+   const btns = $$('.tag-menu-item')
    const all = $('#tag-menu-all')
    const quant = $('#quantity')
    const anms = $$('.anime-wrapper')
+   const number = $('#number')
 
    function activeValue(index) {
       return TagsList.some(tag => animeList[index].tags.includes(tag.tagName) && tag.tagValue)
@@ -20,13 +21,13 @@ export default (() => {
       anms.forEach((anm, i) => {
          const isActive = activeValue(i)
          anm.classList.toggle('active', isActive)
-         if (isActive) activeCount++
+         isActive && activeCount++
       })
-      $('#number').innerText = activeCount
+      number.innerText = activeCount
       filterQuotes()
    }   
 
-   Btns.forEach((btn, i) => {
+   btns.forEach((btn, i) => {
       btn.addEventListener('click', () => {
          TagsList[i].tagValue ^= true
          if (!TagsList[i].tagValue) all.classList.add('active')
@@ -49,7 +50,7 @@ export default (() => {
       const isActive = !TagsList.every(tag => tag.tagValue)
       TagsList.forEach((tag, i) => {
          tag.tagValue = isActive
-         Btns[i].classList.toggle('yes', isActive)
+         btns[i].classList.toggle('yes', isActive)
       })
       filterAnime()
       all.classList.toggle('active')

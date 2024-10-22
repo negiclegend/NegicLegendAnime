@@ -8,6 +8,8 @@ export default (() => {
     const display = $('#quote')
     const nextBtn = $('#next-quote i')
     const prevBtn = $('#prev-quote i')
+    const anms = $$('.anime-wrapper')
+    const footer = $('#footer')
     let activeIndex = 0
 
     function displayQuote(index) {
@@ -18,6 +20,7 @@ export default (() => {
     function showFooterButtons(value) {
         nextBtn.style.display = value ? 'flex' : 'none'
         prevBtn.style.display = value ? 'flex' : 'none'
+        footer.style.display = display.innerText ? 'flex' : 'none'
     }
 
     function filterQuotes() {
@@ -36,7 +39,6 @@ export default (() => {
             }
         } else if (!display.innerText) displayQuote(activeIndex)
         showFooterButtons(animeList.filter((anm, i) => anm.quote !== undefined && activeValue(i)).length > 1)
-        $('#footer').style.display = display.innerText ? 'flex' : 'none'
     }
 
     function findNextQuote(step) {
@@ -50,7 +52,7 @@ export default (() => {
         }
     }
 
-    display.addEventListener('click', () => $$('.anime-wrapper')[activeIndex].scrollIntoView({ behavior: "smooth", block: "center" }))
+    display.addEventListener('click', () => anms[activeIndex].scrollIntoView({ behavior: "smooth", block: "center" }))
     nextBtn.addEventListener('click', () => findNextQuote(1))
     prevBtn.addEventListener('click', () => findNextQuote(-1))
 
