@@ -1,22 +1,19 @@
 "use strict"
 import { $, $$ } from './bind.js'
 
-export default(() => {
-    let playing = {canPlay: false}
+export default (() => {
+    let playing = { canPlay: false }
     let playable = false
     let currentIndex
     const anms = $$('.anime-wrapper')
     const audio = $('#audio')
 
-    audio.addEventListener('canplaythrough', () => {
-        if (audio.readyState >= 3) {
+    const playablePromise = new Promise(resolve => {
+        audio.addEventListener('canplaythrough', () => {
             playable = true
-        }
+            resolve()
+        }, { once: true })
     })
-
-    async function waitUntilPlayable() {
-        while (!playable) await new Promise(resolve => setTimeout(resolve, 100))
-    }
 
     anms.forEach((anm, i) => {
         anm.addEventListener('mouseenter', async () => {
@@ -26,9 +23,10 @@ export default(() => {
                 currentIndex = i
                 audio.src = `./Storage/Music/${i + 1}.mp3`
             }
-            await waitUntilPlayable()
-            audio.play()
+            await playablePromise
+            playable && audio.play()
         })
+
         anm.addEventListener('mouseleave', () => !audio.paused && audio.pause())
     })
 
