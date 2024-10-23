@@ -14,10 +14,10 @@ import playing from './audio.js'
     const audioBtn = $('#volume')
     const exit = $('#exit-menu')
 
-    function handleClick(clickE) {
-        clickE.clickedElement.addEventListener('click', () => {
-            (clickE.affectedElement||clickE.clickedElement).classList[clickE.type||'toggle'](clickE.addedClass||'active')
-            clickE.callBack?.()
+    function handleClick({ clickedElement, affectedElement = clickedElement, type = 'toggle', addedClass = 'active', callBack = null }) {
+        clickedElement.addEventListener('click', () => {
+            affectedElement.classList[type](addedClass)
+            callBack?.()
         })
     }
 
