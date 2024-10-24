@@ -20,12 +20,12 @@ export default (() => {
       let activeCount = 0
       anms.forEach((anm, i) => {
          const isActive = activeValue(i)
-         anm.classList.toggle('active', isActive)
+         anm.style.display = isActive ? 'block' : 'none'
          isActive && activeCount++
       })
       number.innerText = activeCount
       filterQuotes()
-   }   
+   }
 
    btns.forEach((btn, i) => {
       btn.addEventListener('click', () => {
