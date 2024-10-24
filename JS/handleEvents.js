@@ -13,6 +13,7 @@ import playing from './audio.js'
     const theme = $('#theme-file')
     const audioBtn = $('#volume')
     const exit = $('#exit-menu')
+    const eyes = $$('.eye')
 
     function handleClick({ clickedElement, affectedElement = clickedElement, type = 'toggle', addedClass = 'active', callBack = null }) {
         clickedElement.addEventListener('click', () => {
@@ -38,7 +39,7 @@ import playing from './audio.js'
         callBack: () => {
             if(avt.classList.contains('active')) {
                 body.addEventListener('mousemove', () => {
-                    for(let eye of $$('.eye')) {
+                    for(let eye of eyes) {
                         let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2)
                         let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2)
                         let radian = Math.atan2(event.pageX - x, event.pageY - y)
@@ -74,5 +75,12 @@ import playing from './audio.js'
         clickedElement: audioBtn,
         addedClass: 'mute',
         callBack: () => playing.canPlay ^= true
+    })
+
+    $$('.anime-img').forEach(img => {
+        img.addEventListener('error', () => {
+            img.src = 'https://www.elegantthemes.com/blog/wp-content/uploads/2020/08/000-http-error-codes.png'
+            img.parentNode.style.alignItems = 'center'
+        })
     })
 })()

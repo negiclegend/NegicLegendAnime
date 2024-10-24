@@ -10,17 +10,13 @@ import animeList from '../Storage/List/AnimeList.js'
         if(lv[0] == 'A') return 'legendary'
         return 'epic'
     }
-    
-    function error() {
-       return 'onerror="this.src=\'https://thumbs.dreamstime.com/b/computer-screen-error-effect-glitch-binary-code-abstract-digital-matrix-background-noise-vector-228803972.jpg\'; this.parentNode.style.alignItems=\'center\'"'
-    }
 
     $('#main').innerHTML = animeList.map((anm, i) => {
         return `
             <div class="anime-wrapper">
                 <div class="anime-level ${checkLevel(anm.level)}">${anm.level}</div>
                 <div class="anime-img-wrap ${anm.imgP}">
-                    <img src="./Storage/IMG/${i + 1}.jpg" class="anime-img" ${error()}>
+                    <img src="./Storage/IMG/${i + 1}.jpg" class="anime-img" alt="${anm.name}">
                     <a href="${anm.link}" class="anime-link">${anm.name}</a>
                 </div>
                 <div class="anime-tag-wrap">
