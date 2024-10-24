@@ -17,7 +17,7 @@ import animeList from '../Storage/List/AnimeList.js'
 
     $('#main').innerHTML = animeList.map((anm, i) => {
         return `
-            <div class="anime-wrapper active">
+            <div class="anime-wrapper">
                 <div class="anime-level ${checkLevel(anm.level)}">${anm.level}</div>
                 <div class="anime-img-wrap ${anm.imgP}">
                     <img src="./Storage/IMG/${i + 1}.jpg" class="anime-img" ${error()}>

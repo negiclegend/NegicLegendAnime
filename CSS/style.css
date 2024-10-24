@@ -613,10 +613,6 @@ body {
     transition: 0.3s;
     position: relative;
     overflow: hidden;
-    display: none;
-}
-
-.anime-wrapper.active {
     display: block;
 }
 
