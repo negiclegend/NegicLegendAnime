@@ -8,12 +8,9 @@ export default (() => {
     const anms = $$('.anime-wrapper')
     const audio = $('#audio')
 
-    const playablePromise = new Promise(resolve => {
-        audio.addEventListener('canplaythrough', () => {
-            playable = true
-            resolve()
-        }, { once: true })
-    })
+    function waitUntilPlayable() {
+        return new Promise(resolve => audio.addEventListener('canplaythrough', resolve, { once: true }))
+    }
 
     anms.forEach((anm, i) => {
         anm.addEventListener('mouseenter', async () => {
@@ -23,8 +20,8 @@ export default (() => {
                 currentIndex = i
                 audio.src = `./Storage/Music/${i + 1}.mp3`
             }
-            await playablePromise
-            playable && audio.play()
+            await waitUntilPlayable()
+            audio.play()
         })
 
         anm.addEventListener('mouseleave', () => !audio.paused && audio.pause())
