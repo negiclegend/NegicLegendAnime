@@ -4,7 +4,7 @@ const animeList = [
         imgP: 'center',
         link: 'https://myanimelist.net/anime/21/One_Piece',
         name: 'One Piece',
-        tags: ['Action', 'Fantasy', 'Adventure', 'Comedy', 'Drama'],
+        tags: ['Action', 'Fantasy', 'Supernatural', 'Adventure', 'Comedy', 'Drama', 'Martial Art', 'Science Fiction'],
         quote: {
             content: 'If I die here, then I\'m a man that could only make it this far.',
             author: 'Zoro Roronoa'
@@ -15,7 +15,7 @@ const animeList = [
         imgP: 'center',
         link: 'https://myanimelist.net/anime/1735/Naruto__Shippuuden',
         name: 'Naruto',
-        tags: ['Action', 'Comedy', 'Supernatural'],
+        tags: ['Action', 'Comedy', 'Supernatural', 'Martial Art', 'Drama'],
     },
     {
         level: 'S',
@@ -29,14 +29,14 @@ const animeList = [
         imgP: 'top',
         link: 'https://myanimelist.net/anime/235/Detective_Conan?cat=anime',
         name: 'Conan',
-        tags: ['Detective', 'Comedy', 'Psychological'],
+        tags: ['Detective', 'Comedy', 'Psychological', 'Drama'],
     },
     {
         level: 'A',
         imgP: 'center',
         link: 'https://myanimelist.net/anime/6702/Fairy_Tail',
         name: 'Fairy Tail',
-        tags: ['Action', 'Fantasy', 'Adventure', 'Ecchi'],
+        tags: ['Action', 'Fantasy', 'Supernatural', 'Comedy', 'Adventure', 'Ecchi'],
     },
     {
         level: 'S-',
@@ -61,7 +61,7 @@ const animeList = [
         imgP: 'center',
         link: 'https://myanimelist.net/anime/5680/KOn',
         name: 'K ON!',
-        tags: ['Slice of Life', 'Comendy', 'School', 'Music'],
+        tags: ['Slice of Life', 'Comedy', 'School', 'Music'],
         quote: {
             content: 'To the me back then, you don\'t need to worry. You\'ll soon find something you can do, something you can set your heart on.',
             author: 'Yui Hirasawa'
@@ -72,7 +72,7 @@ const animeList = [
         imgP: 'center',
         link: 'https://myanimelist.net/anime/12189/Hyouka',
         name: 'Hyouka',
-        tags: ['Slice of Life', 'Comendy', 'School', 'Detective'],
+        tags: ['Slice of Life', 'Comedy', 'School', 'Detective'],
     },
     {
         level: 'S+',
@@ -118,7 +118,7 @@ const animeList = [
         imgP: 'center',
         link: 'https://myanimelist.net/anime/37993/Watashi_ni_Tenshi_ga_Maiorita/',
         name: 'Watashi ni Tenshi ga Maiorita!',
-        tags: ['Slice of Life', 'Comendy', 'School'],
+        tags: ['Slice of Life', 'Comedy', 'School'],
     },
     {
         level: 'S+',
@@ -556,7 +556,7 @@ const animeList = [
         imgP: 'center',
         link: 'https://myanimelist.net/anime/6574/Hanamaru_Youchien',
         name: 'Hanamaru Youchien',
-        tags: ['Slice of Life', 'Comendy', 'School'],
+        tags: ['Slice of Life', 'Comedy', 'School'],
     },
     {
         level: 'B-',
@@ -588,7 +588,7 @@ const animeList = [
         imgP: 'top',
         link: 'https://myanimelist.net/anime/33012/Island',
         name: 'Island',
-        tags: ['Slice of Life', 'Comendy', 'Romance', 'Psychological', 'Science Fiction'],
+        tags: ['Slice of Life', 'Comedy', 'Romance', 'Psychological', 'Science Fiction'],
     },
     {
         level: 'A+',
@@ -1210,7 +1210,7 @@ const animeList = [
         imgP: 'top',
         link: 'https://myanimelist.net/anime/43299/Wonder_Egg_Priority',
         name: 'Wonder Egg Priority',
-        tags: ['Drama', 'Action', 'Comendy', 'Psychological', 'Supernatural'],
+        tags: ['Drama', 'Action', 'Comedy', 'Psychological', 'Supernatural'],
     },
     {
         level: 'A',
