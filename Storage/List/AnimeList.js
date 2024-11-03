@@ -2577,6 +2577,13 @@ const animeList = [
             content: 'Stop, moment, you are beautiful',
         }
     },
+    {
+        level: 'B+',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/40333/Uzumaki',
+        name: 'Uzumaki',
+        tags: ['Horror' , 'Supernatural'],
+    },
 ]
 
 export default animeList
