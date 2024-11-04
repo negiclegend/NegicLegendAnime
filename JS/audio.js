@@ -19,8 +19,8 @@ export default (() => {
                 playable = false
                 currentIndex = i
                 audio.src = `./Storage/Music/${i + 1}.mp3`
+                await waitUntilPlayable()
             }
-            await waitUntilPlayable()
             audio.play()
         })
 
