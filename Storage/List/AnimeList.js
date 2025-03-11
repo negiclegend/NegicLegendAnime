@@ -429,7 +429,7 @@ const animeList = [
         tags: ['Slice of Life', 'Supernatural'],
     },
     {
-        level: 'S-',
+        level: 'S+',
         imgP: 'center',
         link: 'https://myanimelist.net/anime/16498/Shingeki_no_Kyojin',
         name: 'Shingeki no Kyojin',
@@ -1087,7 +1087,7 @@ const animeList = [
         tags: ['Adventure', 'Fantasy', 'Supernatural', 'Comedy'],
     },
     {
-        level: 'S',
+        level: 'A+',
         imgP: 'center',
         link: 'https://myanimelist.net/anime/40748/Jujutsu_Kaisen_TV',
         name: 'Jujutsu Kaisen',
@@ -2583,6 +2583,13 @@ const animeList = [
         link: 'https://myanimelist.net/anime/40333/Uzumaki',
         name: 'Uzumaki',
         tags: ['Horror' , 'Supernatural'],
+    },
+    {
+        level: 'S-',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/54726/Tsuma_Shougakusei_ni_Naru',
+        name: 'Tsuma, Shougakusei ni Naru.',
+        tags: ['Slice of Life' , 'Supernatural', 'Psychological', 'Drama', 'Romance'],
     },
 ]
 
