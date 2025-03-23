@@ -2591,6 +2591,13 @@ const animeList = [
         name: 'Tsuma, Shougakusei ni Naru.',
         tags: ['Slice of Life' , 'Supernatural', 'Psychological', 'Drama', 'Romance'],
     },
+    {
+        level: 'S+',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/52215/Chi_Chikyuu_no_Undou_ni_Tsuite',
+        name: 'Chi. Chikyuu no Undou ni Tsuite',
+        tags: ['Historical', 'Drama', 'Psychological'],
+    },
 ]
 
 export default animeList
