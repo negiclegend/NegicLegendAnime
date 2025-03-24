@@ -2597,6 +2597,10 @@ const animeList = [
         link: 'https://myanimelist.net/anime/52215/Chi_Chikyuu_no_Undou_ni_Tsuite',
         name: 'Chi. Chikyuu no Undou ni Tsuite',
         tags: ['Historical', 'Drama', 'Psychological'],
+        quote: {
+            content: 'Their words can move hearts, they moved me. I think the inspiration gifted by others is something more precious than life, I want their words to live on.',
+            author: 'Rafal'
+        }
     },
 ]
 
