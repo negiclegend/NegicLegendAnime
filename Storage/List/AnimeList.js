@@ -316,7 +316,7 @@ const animeList = [
         tags: ['Comedy', 'School', 'Harem', 'Romance'],
     },
     {
-        level: 'A+',
+        level: 'S+',
         imgP: 'top',
         link: 'https://myanimelist.net/anime/31953/New_Game',
         name: 'New Game',
@@ -2588,7 +2588,7 @@ const animeList = [
         level: 'S-',
         imgP: 'center',
         link: 'https://myanimelist.net/anime/54726/Tsuma_Shougakusei_ni_Naru',
-        name: 'Tsuma, Shougakusei ni Naru.',
+        name: 'Tsuma, Shougakusei ni Naru',
         tags: ['Slice of Life' , 'Supernatural', 'Psychological', 'Drama', 'Romance'],
     },
     {
@@ -2601,6 +2601,34 @@ const animeList = [
             content: 'Their words can move hearts, they moved me. I think the inspiration gifted by others is something more precious than life, I want their words to live on.',
             author: 'Rafal'
         }
+    },
+    {
+        level: 'A',
+        imgP: 'top',
+        link: 'https://myanimelist.net/anime/57648/Nihon_e_Youkoso_Elf-san',
+        name: 'Nihon e Youkoso Elf-san',
+        tags: ['Slice of Life', 'Comedy', 'Isekai', 'Supernatural', 'Romance'],
+    },
+    {
+        level: 'A-',
+        imgP: 'top',
+        link: 'https://myanimelist.net/anime/56662/Trillion_Game',
+        name: 'Trillion Game',
+        tags: ['Comedy', 'Drama'],
+    },
+    {
+        level: 'A',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/57533/Youkai_Gakkou_no_Sensei_Hajimemashita',
+        name: 'Youkai Gakkou no Sensei Hajimemashita!',
+        tags: ['Comedy', 'Supernatural', 'Fantasy'],
+    },
+    {
+        level: 'S',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/59361/Kono_Kaisha_ni_Suki_na_Hito_ga_Imasu',
+        name: 'Kono Kaisha ni Suki na Hito ga Imasu',
+        tags: ['Romance', 'Comedy', 'Slice of Life'],
     },
 ]
 
