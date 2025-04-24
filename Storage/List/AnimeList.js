@@ -2630,6 +2630,13 @@ const animeList = [
         name: 'Kono Kaisha ni Suki na Hito ga Imasu',
         tags: ['Romance', 'Comedy', 'Slice of Life'],
     },
+    {
+        level: 'S',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/44807/Ryuu_to_Sobakasu_no_Hime',
+        name: 'Ryuu to Sobakasu no Hime',
+        tags: ['Drama', 'Music', 'Science Fiction', 'Romance'],
+    },
 ]
 
 export default animeList
