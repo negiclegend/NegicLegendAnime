@@ -2635,7 +2635,7 @@ const animeList = [
         imgP: 'center',
         link: 'https://myanimelist.net/anime/44807/Ryuu_to_Sobakasu_no_Hime',
         name: 'Ryuu to Sobakasu no Hime',
-        tags: ['Drama', 'Music', 'Science Fiction', 'Romance'],
+        tags: ['Drama', 'Music', 'Psychological', 'Science Fiction', 'Romance'],
     },
 ]
 
