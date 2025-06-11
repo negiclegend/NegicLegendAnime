@@ -2637,6 +2637,13 @@ const animeList = [
         name: 'Ryuu to Sobakasu no Hime',
         tags: ['Drama', 'Music', 'Psychological', 'Science Fiction', 'Romance'],
     },
+    {
+        level: 'S',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/6675/Redline',
+        name: 'Redline',
+        tags: ['Science Fiction', 'Action', 'Sport'],
+    },
 ]
 
 export default animeList
