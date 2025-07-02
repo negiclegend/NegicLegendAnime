@@ -517,7 +517,7 @@ const animeList = [
         tags: ['Drama', 'Fantasy', 'Action', 'Adventure', 'Isekai'],
     },
     {
-        level: 'B+',
+        level: 'A',
         imgP: 'bottom',
         link: 'https://myanimelist.net/anime/37447/Karakuri_Circus_TV',
         name: 'Karakuri Circus',
@@ -2643,6 +2643,20 @@ const animeList = [
         link: 'https://myanimelist.net/anime/6675/Redline',
         name: 'Redline',
         tags: ['Science Fiction', 'Action', 'Sport'],
+    },
+    {
+        level: 'A+',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/60658/Hibi_wa_Sugiredo_Meshi_Umashi',
+        name: 'Hibi wa Sugiredo Meshi Umashi',
+        tags: ['Slice of Life', 'Food', 'School', 'Comedy'],
+    },
+    {
+        level: 'B+',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/5681/Summer_Wars',
+        name: 'Summer Wars',
+        tags: ['Drama', 'Comedy', 'Science Friction'],
     },
 ]
 
