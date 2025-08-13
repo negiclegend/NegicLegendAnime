@@ -2658,6 +2658,13 @@ const animeList = [
         name: 'Summer Wars',
         tags: ['Drama', 'Comedy', 'Science Friction'],
     },
+    {
+        level: 'B+',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/58492/Mono',
+        name: 'Mono',
+        tags: ['Comedy'],
+    },
 ]
 
 export default animeList
