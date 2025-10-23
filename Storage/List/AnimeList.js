@@ -2039,7 +2039,7 @@ const animeList = [
         tags: ['Drama', 'Otome'],
     },
     {
-        level: 'A-',
+        level: 'S',
         imgP: 'top',
         link: 'https://myanimelist.net/anime/50346/Yofukashi_no_Uta',
         name: 'Yofukashi no Uta',
@@ -2664,6 +2664,13 @@ const animeList = [
         link: 'https://myanimelist.net/anime/58492/Mono',
         name: 'Mono',
         tags: ['Comedy'],
+    },
+    {
+        level: 'A+',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/60334/Anne_Shirley',
+        name: 'Anne Shirley',
+        tags: ['Comedy', 'Drama', 'Romance', 'Historical'],
     },
 ]
 
