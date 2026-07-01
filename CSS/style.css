@@ -5,25 +5,12 @@
 * Browsers: last 10 version
 */
 
-@-webkit-keyframes MoveTop {
-    0%,
-    40%,
-    100% {
-        -webkit-transform: translateY(0);
-                transform: translateY(0)
-    }
-    20% {
-        -webkit-transform: translateY(-2vw);
-                transform: translateY(-2vw);
-    }
-}
-
 @keyframes MoveTop {
     0%,
     40%,
     100% {
         -webkit-transform: translateY(0);
-                transform: translateY(0)
+                transform: translateY(0);
     }
     20% {
         -webkit-transform: translateY(-2vw);

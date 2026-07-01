@@ -440,7 +440,7 @@ const animeList = [
         }
     },
     {
-        level: 'A+',
+        level: 'S+',
         imgP: 'center',
         link: 'https://myanimelist.net/anime/38691/Dr_Stone',
         name: 'Dr. Stone',
@@ -2631,7 +2631,7 @@ const animeList = [
         tags: ['Romance', 'Comedy', 'Slice of Life'],
     },
     {
-        level: 'S',
+        level: 'B-',
         imgP: 'center',
         link: 'https://myanimelist.net/anime/44807/Ryuu_to_Sobakasu_no_Hime',
         name: 'Ryuu to Sobakasu no Hime',
@@ -2671,6 +2671,27 @@ const animeList = [
         link: 'https://myanimelist.net/anime/60334/Anne_Shirley',
         name: 'Anne Shirley',
         tags: ['Comedy', 'Drama', 'Romance', 'Historical'],
+    },
+    {
+        level: 'A+',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/56009/Yuusha-kei_ni_Shosu__Choubatsu_Yuusha_9004-tai_Keimu_Kiroku',
+        name: 'Yuusha-kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku',
+        tags: ['Action', 'Adventure', 'Fantasy'],
+    },
+    {
+        level: 'B',
+        imgP: 'center',
+        link: 'https://myanimelist.net/anime/60162/Akujiki_Reijou_to_Kyouketsu_Koushaku',
+        name: 'Akujiki Reijou to Kyouketsu Koushaku',
+        tags: ['Fantasy', 'Romance', 'Supernatural', 'Otome'],
+    },
+    {
+        level: 'S',
+        imgP: 'top',
+        link: 'https://myanimelist.net/anime/56734/Class_de_2-banme_ni_Kawaii_Onnanoko_to_Tomodachi_ni_Natta',
+        name: 'Class de 2-banme ni Kawaii Onnanoko to Tomodachi ni Natta',
+        tags: ['Comedy', 'Romance', 'School', 'Slice of Life'],
     },
 ]
 
